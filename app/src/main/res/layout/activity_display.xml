@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/profile_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/profile_image"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_octicons_mark_github" />
+
+        <RelativeLayout
+            android:id="@+id/profileimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33b5e5"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="225dp"
+                android:text="Name"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Bio"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/profile_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_bio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Location"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileimage"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_repos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:padding="40dp"
+                android:text="Repository"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/profile_followers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:padding="40dp"
+                android:text="Followers"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/profile_following"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:padding="40dp"
+                android:text="Following"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/profile_events"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:padding="40dp"
+                android:text="Events"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/profile_oraganizations"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="7dp"
+                android:padding="40dp"
+                android:text="Organizations"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
